@@ -29,5 +29,6 @@ class KnpMenuExtension extends Extension
         if ($config['templating']) {
             $loader->load('templating.xml');
         }
+        $container->setAlias('knp_menu.menu_provider', $config['menu_provider']);
     }
 }
